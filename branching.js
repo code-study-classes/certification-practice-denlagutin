@@ -82,22 +82,22 @@ export function convertToMeters(unitNumber, lengthInUnits) {
     let lengthInMeters;
     switch (unitNumber) {
       case 1:
-        lengthInMeters = lengthInUnits * 0.1;
+        lengthInMeters = lengthInUnits * 0.1; // Дециметр в метр
         break;
       case 2:
-        lengthInMeters = lengthInUnits * 1000;
+        lengthInMeters = lengthInUnits * 1000; // Километр в метр
         break;
       case 3:
-        lengthInMeters = lengthInUnits;
+        lengthInMeters = lengthInUnits; // Метр в метр
         break;
       case 4:
-        lengthInMeters = lengthInUnits * 0.001;
+        lengthInMeters = lengthInUnits * 0.001; // Миллиметр в метр
         break;
       case 5:
-        lengthInMeters = lengthInUnits * 0.01;
-      // eslint-disable-next-line no-fallthrough
+        lengthInMeters = lengthInUnits * 0.01; // Сантиметр в метр
+        break;
       default:
-        lengthInMeters = 'Invalid unit number.';
+        lengthInMeters = 'Invalid unit number.'; // Некорректный номер единицы длины
         break;
     }
     return lengthInMeters;
