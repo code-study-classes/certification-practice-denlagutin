@@ -65,7 +65,7 @@ describe('Group: loops', () => {
     expect(findMinKAndSum(3)).toBe(2);
     expect(findMinKAndSum(10)).toBe(4);
     expect(findMinKAndSum(20)).toBe(6);
-    expect(findMinKAndSum(30)).toBe(7);
+    expect(findMinKAndSum(30)).toBe(8);
   });
 
   test('task9', () => {
